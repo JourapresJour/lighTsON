@@ -1,0 +1,47 @@
+:root {
+    --primary-color: #2196f3;
+    --secondary-color: #255784;
+}
+*
+{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    background: var(--secondary-color);
+    width: 100vh;
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn
+{
+    border: none; 
+    background: transparent;
+    font-size: 1rem;
+    color: var(--primary-color);
+    text-transform: uppercase;
+    text-decoration: none;
+    position:relative;
+    cursor:pointer;
+    padding: 1rem 3rem;
+    transition: .2s;
+}
+.btn:hover
+{
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    box-shadow: 0 0 10px var(--primary-color),0 0 40px var(--primary-color), 0 0 80px var(--primary-color);
+    transition: 1s;
+}
+
+@media screen and (min-width: 400px)
+{
+    body
+    {
+        width: unset;
+    }
+}
